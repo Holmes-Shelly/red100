@@ -13,9 +13,9 @@ function main(){
   readflow("政策文件", 2, false);
   readflow("工作动态", 2, false);
   readflow("工作动态", 2, false);
-  readflow("知识城邦", 2, false);
-  readflow("知识城邦", 2, false);
   readflow("知识城邦", 2, true);
+  readflow("知识城邦", 2, false);
+  readflow("知识城邦", 2, false);
   shipin(2);
   toast("all finished");
 }
