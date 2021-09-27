@@ -85,6 +85,7 @@ function comm(){
   longClick(button.bounds().centerX(),button.bounds().centerY());
   sleep(1000);
   if(text("粘贴").exists()){
+    sleep(2000);
     text("粘贴").findOne().parent().click();
     toast("粘贴点好了吗");
     //sleep(1000);
