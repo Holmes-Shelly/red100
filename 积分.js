@@ -79,24 +79,17 @@ function clickit(button){
 }
 
 function comm(){
+  text("点赞").findOne().click();
   setClip("科技进步带动国家发展");
   className("android.widget.EditText").depth(14).findOne().click();
   let button = className("android.widget.EditText").depth(16).findOne();
-  longClick(button.bounds().centerX(),button.bounds().centerY());
+  
   sleep(1000);
-  if(text("粘贴").exists()){
-    sleep(2000);
-    text("粘贴").findOne().parent().click();
-    toast("粘贴点好了吗");
-    //sleep(1000);
-  }
-  else{
-    toast("无弹出操作顺利");
-    button.paste();
-  }
+  toast("直接粘贴");
+  button.paste();
+  
   sleep(1000);
   text("发送").findOne().click();
-  text("点赞").findOne().click();
   text("点赞").findOne().click();
 }
 
